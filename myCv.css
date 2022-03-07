@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color:lightgray;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.projects{
+    display: none;
+}
+.logo{
+    text-decoration: none;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-weight: 700 ;
+    font-size: 1.8em;
+}
+.navigation a {
+    text-decoration: none;
+    color:cornflowerblue ;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left:30px ;
+}
+.navigation a:hover{
+    color:rgb(184, 46, 184);
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+section{
+    padding:100px 200px ;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('Thumama Alrawwad.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    
+}
+.main h2 span{
+    font-size: 1.7em;
+    font-weight: 700;
+    color:deepskyblue;
+    margin-top: 10px;
+    display:inline-block;
+}
+.main h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.view{
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 40px;
+    background: deepskyblue;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    transition: .3s ease;
+}
+.view:hover{
+    transform: scale(1.1);
+    background-color: blue;
+   
+}
+.social-icons a{
+    display: flex;
+    margin-left: 10px;
+    color: blue;
+    padding-right: 10px;
+}
+.social-icons{
+    display: flex;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    color: cornflowerblue;
+    margin-bottom: 30px;
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, .5);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: .3s ease;
+    text-decoration: none;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.cards{
+    background-color: lightgray;
+}
+.icon{
+    color:cornflowerblue ;
+    font-size:8em ;
+    text-align: center;
+}
+.info{
+    color:cornflowerblue;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-decoration: none;
+    font-style:normal;
+    justify-content: center;
+    text-align: center;
+}
+.info h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phoneAndEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+.email , .phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.phone p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8em;
+    padding : 10px ;
+}
+.email a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8em;
+    padding : 10px ;
+    color: black;
+}
+.footer{
+    padding:25px 200px ;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 660px) {
+    .card{
+        background-color: white;
+        width: 33.33vh;
+        box-shadow: 0 5px 25px rgba(1, 1, 1, .5);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: .3s ease;
+        text-decoration: none;
+    }
+    section{
+        padding:0 ;
+        margin: 0;
+    }
+    .phoneAndEmail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+    .email a{
+        font-size: 1.3em;
+    }
+    header {
+        background-color:lightgray;
+        width: 100%;
+        position: fixed;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 200px;
+    }
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        padding:0 ;
+        background-color: #111;
+        color: white;
+        text-align: center;
+    }
+  }
